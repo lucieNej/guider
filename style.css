@@ -1,0 +1,34 @@
+html #image{
+	background: url(images/main.jpg) no-repeat center fixed;
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+	height: 800px;
+	
+}
+
+.container-fluid {
+	padding: 0;
+}
+
+
+h1, a {
+	color: white;
+	font-weight: bold;
+}
+
+
+
+#box {
+	background-color: white;
+	
+	box-shadow:  10px 10px 10px #555;
+
+}
+
+
+
+
+
+
+
