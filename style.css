@@ -3,8 +3,6 @@ html #image{
 	background-size: cover;
 	margin: 0;
 	padding: 0;
-	height: 800px;
-	
 }
 
 .container-fluid {
@@ -12,22 +10,64 @@ html #image{
 }
 
 
-h1, a {
+h1, .liennavbar {
 	color: white;
 	font-weight: bold;
+
+}
+h1, h2, h4 {
+	    font-family: 'Satisfy', cursive;
 }
 
 
-
-#box {
-	background-color: white;
-	
-	box-shadow:  10px 10px 10px #555;
-
+#box, #info {
+	background-color: rgba(255, 255, 255, 0.9);
+	/*box-shadow:  10px 10px 10px #555;*/
 }
 
 
+.logos {
+height : 120px;
+}
+#logo {
+		height : 10vw;
+	width: 10vw;
+}
+.logo {
+	height : 6vw;
+	width: 6vw;
+}
+.card-img-top {
+height: 110px;
+width: 110px;
+}
+.coeur {
+	height: 10px;
+}
 
+.social {
+	height : 30px;
+}
+
+.partenaires {
+	color: white;
+	border-bottom : white solid 1px;
+}
+
+footer {
+	background-color: rgba(89, 89, 89, 0.9);
+}
+.partners {
+	height : 4vw;
+}
+
+ul {
+	list-style-type: none !important;
+}
+
+li {
+	text-indent: -10px;
+}
 
 
 
