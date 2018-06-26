@@ -1,0 +1,37 @@
+
+.bgtranspa {
+   background: rgba(0, 0, 0, 0.3);
+}
+
+#titre, h2, .satisfy {
+ font-family: 'Satisfy', cursive;
+}
+
+#photoguide {
+  max-width : 60%;
+  height: auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+
+/*avis des utilisateurs*/
+.card-img-top {
+height: 110px;
+width: 110px;
+}
+.coeur {
+  height: 10px;
+}
+
+
+.bgdimgrey {
+  background: rgb(78,123,121);
+}
+
+
+#book {
+  height: 60%;
+}
