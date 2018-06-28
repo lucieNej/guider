@@ -12,43 +12,48 @@
 </head>
 
 <body>
-    <div class="container-fluid no-gutter m-0 p-0">
-        <header>
-            <nav class="navbar navbar-expand-xl navbar-expand-lg navbar-expand-md navbar-light bg-light nav" role="navigation">
-                <div class="container-fluid">
-                    <div class="navbar-header col-xl-1 col-lg-1 col-md-1 d-flex justify-content-between">
-                        <a class="navbar-brand mr-0" href="#">
+
+
+
+
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-expand-lg navbar-light bg-light nav d-flex justify-content-between" role="navigation">
+            <div class="container-fluid ">
+                <div class="navbar-header ">
+                    <a class="navbar-brand mr-0" href="#">
                       <img src="images/logo.png" height="100px" width="100px">
                     </a>
-                        <button class="navbar-toggler hidden-lg-up align-self-end" type="button" data-toggle="collapse" data-target="#filtres" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" id="btnFiltres">Filtres</button>
-                        <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                    </div>
-                    <div class="collapse navbar-collapse col-xl-5 col-lg-5 col-md-1 col-sm-1">
-                        <h2 id="titre" class="d-none d-xl-block text-dark font-weight-bold">"Collect moments not things with Guider"</h2>
-                    </div>
-                    <div class="collapse navbar-collapse col-xl-6 col-lg-6 col-md-8 col-sm-7 justify-content-end" id="navbarToggleExternalContent">
-                        <ul class="navbar-nav mr-5">
-                            <li class="nav-item nav-link "><a class="text-dark font-weight-bold btn m-0" href="liens_du_menu/favoris.html">Mes favoris</a></li>
-                            <li class="nav-item nav-link "><a class="text-dark font-weight-bold btn m-0" href="liens_du_menu/reservations.html">Mes reservations</a></li>
-                            <li class="nav-item nav-link "><a class="text-dark font-weight-bold btn m-0" href="liens_du_menu/messagerie.html">Mes messages</a></li>
-                            <li class="nav-item btn dropdown">
-                                <a class="nav-link dropdown-toggle m-O" href="#exp" id="navbardrop" data-toggle="dropdown">
+                    <button class="navbar-toggler hidden-lg-up align-self-end" type="button" data-toggle="collapse" data-target="#book" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" id="btnFiltres">Réserver</button>
+                    <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse col-xl-5 col-lg-5 col-md-1 col-sm-1">
+                    <h2 id="titre" class="d-none d-xl-block text-dark font-weight-bold">"Collect moments not things with Guider"</h2>
+                </div>
+                <div class="collapse navbar-collapse col-xl-6 col-lg-6 col-md-10 col-sm-10 justify-content-end" id="navbarToggleExternalContent">
+                    <ul class="navbar-nav mr-5">
+                        <li class="nav-item nav-link "><a class="text-dark font-weight-bold btn m-0" href="liens_du_menu/favoris.html">Mes favoris</a></li>
+                        <li class="nav-item nav-link "><a class="text-dark font-weight-bold btn m-0" href="liens_du_menu/reservations.html">Mes reservations</a></li>
+                        <li class="nav-item nav-link "><a class="text-dark font-weight-bold btn m-0" href="liens_du_menu/messagerie.html">Mes messages</a></li>
+                        <li class="nav-item btn dropdown">
+                            <a class="nav-link dropdown-toggle m-O" href="#exp" id="navbardrop" data-toggle="dropdown">
                               <img src="images/69442.svg" class="img-fluid"></img>
                             </a>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="liens_du_menu/profil.html">Mon profil</a>
-                                    <a class="dropdown-item" href="liens_du_menu/profilguide.html">Devenir guide</a>
-                                    <a class="dropdown-item" href="index.html">Se déconnecter</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="liens_du_menu/profil.html">Mon profil</a>
+                                <a class="dropdown-item" href="liens_du_menu/profilguide.html">Devenir guide</a>
+                                <a class="dropdown-item" href="index.html">Se déconnecter</a>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-        </header>
-        <!-- ----------------------------------------------------------- -->
+            </div>
+        </nav>
+    </header>
+
+    <!-- ----------------------------------------------------------- -->
+    <div class="container-fluid no-gutter m-0 p-0">
         <section class="col-md-12 d-none d-lg-block d-sm-none d-md-none my-4">
             <div class="container-fluid text-center">
                 <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
@@ -67,210 +72,221 @@
                     <a class="carousel-control-prev" href="#recipeCarousel" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
-        </a>
+                    </a>
                     <a class="carousel-control-next" href="#recipeCarousel" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
-        </a>
+                    </a>
                 </div>
             </div>
         </section>
+    </div>
         <!-- ----------------------------------------------------- -->
         <div class="bg-light container-fluid col-md-12 row mx-0 pb-5">
             <div class="col-md-2 d-flex flex-column space-between mt-3">
-                <img src="images/anna.jpeg" class="img-fluid img-thumbnail rounded-circle ml-5" id="photoguide">
+                <img src="images/anna.jpeg" class="img-fluid img-thumbnail rounded-circle mx-auto" id="photoguide">
                 <p class="text-center satisfy">Nom du guide</p>
-                <button class="btn btn-info mt-3" href="messagerie.html">Contacter</button>
+                <button class="btn btn-info mt-3" href="#" data-toggle="modal" data-target="#message_guide">Contacter</button>
             </div>
             <div class="col-md-9 mx-auto">
-                <h2 class="mx-auto col-md-10 pt-5">
-    Titre de l'offre
-  </h2>
-                <p class="py-3">Bonjour, je me présente, je suis blablabla ... gnagnagna ... Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <a class="btn btn-info float-right text-white" href="guide.hmtl">En savoir +</a>
-                <!-- modal -->
+                <h2 class="mx-auto col-md-3 pt-5">Titre de l'offre</h2>
+                <p class="py-3">Bonjour, je me présente, je suis blablabla ... gnagnagna ... #nico #mescouilles Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <a class="btn btn-info float-right text-white" href="guide.html">En savoir +</a>
             </div>
         </div>
-    </div>
+        <!-- ---------------------------------------------- -->
+        <div class="bg-white container-fluid col-md-12 row mt-5 mx-0 p-0">
 
-<!-- ---------------------------------------------- -->
-<div class="bg-white container-fluid col-md-12 row mt-5 mx-0 p-0">
-
-<div class="col-md-1"></div>
-
-  <div class="col-md-8">
-    <h2>Titre de l'offre</h2>
-    <hr>
-    <div class="d-inline-flex">
-    <p class="px-2 mb-0">Catégorie</p>
-    <p class="px-2 mb-0">|</p>
-    <p class="px-2 mb-0">Lieu</p>
-    <p class="px-2 mb-0">|</p>
-    <p class="px-2 mb-0">Nombre de personnes</p>
-    <p class="px-2 mb-0">|</p>
-    <p class="px-2 mb-0">Durée</p>
-    <p class="px-2 mb-0">|</p>
-    <p class="px-2 mb-0">Langue</p>
-  </div>
-    <hr>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-<hr>
-
-<div class="d-flex justify-content-around pt-3">
-  <div>
-    <ul>
-      <li><img src="images/tick.png" class="p-3">blabla</li>
-      <li><img src="images/tick.png" class="p-3">blabla</li>
-      <li><img src="images/tick.png" class="p-3">blabla</li>
-    </ul>
-  </div>
-  <div>
-    <ul>
-      <li><img src="images/tick.png" class="p-3">blabla</li>
-      <li><img src="images/tick.png" class="p-3">blabla</li>
-      <li><img src="images/tick.png" class="p-3">blabla</li>
-    </ul>
-  </div>
+            <div class="col-md-9 mx-auto">
+                <h2>Titre de l'offre</h2>
+                <hr>
+                    <div class="d-inline-flex">
+                        <p class="px-2 mb-0">Catégorie</p>
+                        <p class="px-2 mb-0">|</p>
+                        <p class="px-2 mb-0">Lieu</p>
+                        <p class="px-2 mb-0">|</p>
+                        <p class="px-2 mb-0">Nombre de personnes</p>
+                        <p class="px-2 mb-0">|</p>
+                        <p class="px-2 mb-0">Durée</p>
+                        <p class="px-2 mb-0">|</p>
+                        <p class="px-2 mb-0">Langue</p>
+                    </div>
+                <hr> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <hr>
+                <div class="d-flex justify-content-around pt-3">
+                    <div>
+                        <ul>
+                            <li><img src="images/tick.png" class="p-3">blabla</li>
+                            <li><img src="images/tick.png" class="p-3">blabla</li>
+                            <li><img src="images/tick.png" class="p-3">blabla</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><img src="images/tick.png" class="p-3">blabla</li>
+                            <li><img src="images/tick.png" class="p-3">blabla</li>
+                            <li><img src="images/tick.png" class="p-3">blabla</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
 
-</div>
-
-  </div>
-
-
-<!-- _____________________BOOK________________________ -->
-    <div class="col-md-2 sticky-top bg-white px-0 mx-auto border" id="book">
-
-    <div class="">
-
-<div class="bgdimgrey p-4">
-  <h2 class="text-white">Prix</h2>
-</div>
-
-<div class="p-4">
-
-  <div class="form-group">
-    <label for="exampleDropdownFormEmail2">Date</label>
-    <input type="date" class="form-control" id="exampleDropdownFormEmail2">
-  </div>
-
-  <div class="form-group">
-    <label for="exampleDropdownFormPassword2">Nombre de personnes</label>
-    <input type="number" class="form-control" id="exampleDropdownFormPassword2" placeholder="2">
-  </div>
-
-  <button type="submit" class="btn bgdimgrey text-white ml-5">Réservez</button>
-
-</div>
-</div>
-
-  </div>
+            <!-- _____________________BOOK________________________ -->
+            <div class="col-md-2 d-none d-lg-block d-md-none d-sm-none sticky-top bg-white px-0 mx-auto border" id="book">
+                <div class="">
+                    <div class="bgdimgrey p-4">
+                        <h2 class="text-white">Prix</h2>
+                    </div>
+                    <div class="p-4">
+                        <div class="form-group">
+                            <label for="exampleDropdownFormEmail2">Date</label>
+                            <input type="date" class="form-control" id="exampleDropdownFormEmail2">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleDropdownFormPassword2">Nombre de personnes</label>
+                            <input type="number" class="form-control" id="exampleDropdownFormPassword2" placeholder="2">
+                        </div>
+                        <button type="submit" class="btn bgdimgrey text-white">Réservez</button>
+                    </div>
+                </div>
+            </div>
 
 
-
-<!-- __________CARTE___________________ -->
-<div class="bg-light container-fluid col-md-12 row mt-5 p-0 no-gutter mx-0">
-<div class="col-md-1"></div>
-  <div class="col-md-8 ">
-  <h2 class="py-5">Lieu de la rencontre :</h2>
-  <img src="images/googleMap.png" class="img-fluid mb-5">
-</div>
-<div class="col-md-3"></div>
-</div>
-
-
-
-
-<!-- ____________________avis _______________________ -->
-
-<div class="col-md-1"></div>
-                <section class="col-md-8 p-4" class="box" id="info">
-                    <h2 class="p-4">Avis des utilisateurs</h2>
-                    <div class="card-deck">
-                        <div class="card bg-light">
-                            <img class="card-img-top mx-auto mt-2 rounded-circle img-thumbnail" src="images/anna.jpeg" alt="Card image cap">
-                            <div class="card-body d-flex flex-column justify-content-between">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text">
-                                    <small class="text-muted">
+            <!-- __________CARTE___________________ -->
+            <div class="bg-light container-fluid col-lg-8 col-md-12 row mt-5 p-0 no-gutter mx-0">
+                <div class="col-md-1"></div>
+                <div class="col-lg-8 col-md-10 col-sm-10 ">
+                    <h2 class="py-5">Lieu de la rencontre :</h2>
+                    <img src="images/googleMap.png" class="img-fluid mb-5">
+                </div>
+                <div class="col-md-3 d-none d-lg-block d-md-none d-sm-none "></div>
+            </div>
+            <!-- ____________________avis _______________________ -->
+            <div class="col-md-1"></div>
+            <section class="col-lg-8 col-md-12 p-4" class="box" id="info">
+                <h2 class="p-4">Avis des utilisateurs</h2>
+                <div class="card-deck">
+                    <div class="card bg-light">
+                        <img class="card-img-top mx-auto mt-2 rounded-circle img-thumbnail" src="images/anna.jpeg" alt="Card image cap">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text">
+                                <small class="text-muted">
                                         <img src="images/coeurrouge.svg" class="coeur img-fluid">
                                         <img src="images/coeurrouge.svg" class="coeur img-fluid">
                                         <img src="images/coeurrouge.svg" class="coeur img-fluid">
                                         <img src="images/coeurrouge.svg" class="coeur img-fluid">
                                         <img src="images/coeurblanc.svg" class="coeur img-fluid">
                                     </small>
-                                </p>
-                            </div>
+                            </p>
                         </div>
-                        <div class="card bg-light">
-                            <img class="card-img-top mx-auto mt-2 rounded-circle img-thumbnail" src="images/IMG-1603.JPG" alt="Card image cap">
-                            <div class="card-body d-flex flex-column justify-content-between">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                                <p class="card-text">
-                                    <small class="text-muted">
+                    </div>
+                    <div class="card bg-light">
+                        <img class="card-img-top mx-auto mt-2 rounded-circle img-thumbnail" src="images/IMG-1603.JPG" alt="Card image cap">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            <p class="card-text">
+                                <small class="text-muted">
                                         <img src="images/coeurrouge.svg" class="coeur img-fluid">
                                         <img src="images/coeurrouge.svg" class="coeur img-fluid">
                                         <img src="images/coeurrouge.svg" class="coeur img-fluid">
                                         <img src="images/coeurrouge.svg" class="coeur img-fluid">
                                         <img src="images/coeurblanc.svg" class="coeur img-fluid">
                                       </small>
-                                </p>
-                            </div>
+                            </p>
                         </div>
-                        <div class="card bg-light">
-                            <img class="card-img-top mx-auto mt-2 rounded-circle img-thumbnail" src="images/nico.jpg" alt="Card image cap">
-                            <div class="card-body d-flex flex-column justify-content-between">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                                <p class="card-text">
-                                    <small class="text-muted">
+                    </div>
+                    <div class="card bg-light">
+                        <img class="card-img-top mx-auto mt-2 rounded-circle img-thumbnail" src="images/nico.jpg" alt="Card image cap">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                            <p class="card-text">
+                                <small class="text-muted">
                                     <img src="images/coeurrouge.svg" class="coeur img-fluid">
                                     <img src="images/coeurrouge.svg" class="coeur img-fluid">
                                     <img src="images/coeurrouge.svg" class="coeur img-fluid">
                                     <img src="images/coeurrouge.svg" class="coeur img-fluid">
                                     <img src="images/coeurblanc.svg" class="coeur img-fluid">
                                     </small></p>
-                            </div>
                         </div>
                     </div>
-                </section>
-
+                </div>
+            </section>
             <div class="col-md-3"></div>
 
+</div>
+            <!-- __________________modal contacter guide _____________________ -->
+            <div class="modal" id="message_guide" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Contacter le guide :</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="">
+                                <textarea name="message" rows="10" cols="45" placeholder="Votre message" class="mx-auto"></textarea>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary">Envoyer</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- fin modal -->
+
+            <footer class="col-md-12 mb-0 mt-5 ">
+                <div class="row p-3 text-light">
+                    <div class="col-md-4">
+                        <h4 class="pb-2 satisfy">Nos Partenaires</h4>
+                        <ul>
+                            <li>Sictiam</li>
+                            <li>Gîtes de France</li>
+                            <li>Département des Alpes-Maritimes</li>
+                            <li>France Connect</li>
+                            <li>Nos partenaires etc</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 d-flex align-items-center justify-content-center">
+                        <img src="images/fb.svg" class="social px-3 mt-2 mb-3">
+                        <img src="images/twitter.svg" class="social px-3 mt-2 mb-3">
+                        <img src="images/insta.svg" class="social px-3 mt-2 mb-3">
+                        <img src="images/g+.svg" class="social px-3 mt-2 mb-3">
+                    </div>
+                    <div class="col-md-4">
+                        <h4 class="pb-2 satisfy">Liens</h4>
+                        <ul>
+                            <li>Conditions Générales</li>
+                            <li>Carte</li>
+                            <li>Recherche</li>
+                            <li>Equipe Guider</li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- <div class="row d-flex justify-content-center">
+                    <img src="images/fb.svg" class="social pl-3 mt-2 mb-3">
+                    <img src="images/twitter.svg" class="social pl-3 mt-2 mb-3">
+                    <img src="images/insta.svg" class="social pl-3 mt-2 mb-3">
+                    <img src="images/g+.svg" class="social pl-3 mt-2 mb-3">
+                </div>
+                <p class="mb-0 d-flex justify-content-center text-light">Copyright 2018</p> -->
+                <p class="mb-0 blockquote-footer text-light d-flex justify-content-end">Copyright 2018</p>
+            </footer>
+        </div>
 
 
-
-
-
-
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,37 +1,67 @@
-
-.bgtranspa {
-   background: rgba(0, 0, 0, 0.3);
-}
-
-#titre, h2, .satisfy {
- font-family: 'Satisfy', cursive;
+#titre,
+h2,
+.satisfy {
+    font-family: 'Satisfy', cursive;
 }
 
 #photoguide {
-  max-width : 60%;
-  height: auto;
+    width: 40%;
+    height: auto;
 }
 
 li {
-  list-style-type: none;
+    list-style-type: none;
 }
+
+
 
 
 /*avis des utilisateurs*/
+
 .card-img-top {
-height: 110px;
-width: 110px;
+    height: 110px;
+    width: 110px;
 }
+
 .coeur {
-  height: 10px;
+    height: 10px;
 }
 
 
 .bgdimgrey {
-  background: rgb(78,123,121);
+    background: rgb(78, 123, 121);
 }
 
 
 #book {
-  height: 60%;
+    height: 60%;
+}
+
+
+
+/*FOOTER*/
+
+.social {
+    height: 30px;
+}
+
+.partenaires {
+    color: white;
+    border-bottom: white solid 1px;
+}
+
+footer {
+    background-color: rgba(89, 89, 89, 0.9);
+}
+
+.partners {
+    height: 4vw;
+}
+
+ul {
+    list-style-type: none !important;
+}
+
+li {
+    text-indent: -10px;
 }
