@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <!-- _____________________________________nav_____________________________________ -->
     <header>
         <nav class="navbar navbar-expand-xl navbar-expand-lg navbar-light bg-light nav d-flex justify-content-between" role="navigation">
             <div class="container-fluid ">
@@ -20,14 +21,14 @@
                       <img src="images/logo.png" height="100px" width="100px">
                     </a>
                     <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#booksmall" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" id="btnBook">Réserver</button>
-                    <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 </div>
                 <div class="collapse navbar-collapse col-xl-5 col-lg-5 col-md-1 col-sm-1">
                     <h2 id="titre" class="d-none d-xl-block text-dark font-weight-bold">"Collect moments not things with Guider"</h2>
                 </div>
-                <div class="collapse navbar-collapse col-xl-6 col-lg-6 col-md-10 col-sm-10 justify-content-end" id="navbarToggleExternalContent">
+                <div class="collapse navbar-collapse col-xl-6 col-lg-6 col-md-10 col-sm-10 justify-content-end" id="navbarContent">
                     <ul class="navbar-nav mr-5">
                         <li class="nav-item nav-link "><a class="text-dark font-weight-bold btn m-0" href="liens_du_menu/favoris.html">Mes favoris</a></li>
                         <li class="nav-item nav-link "><a class="text-dark font-weight-bold btn m-0" href="liens_du_menu/reservations.html">Mes reservations</a></li>
@@ -44,24 +45,6 @@
                         </li>
                     </ul>
                 </div>
-                <!--  <div class="collapse navbar-collapse  col-lg-2 d-none d-lg-block d-md-none d-sm-none sticky-top bg-white px-0 mx-auto border" id="book">
-                <div class="">
-                    <div class="bgdimgrey p-4">
-                        <h2 class="text-white">Prix</h2>
-                    </div>
-                    <div class="p-4">
-                        <div class="form-group">
-                            <label for="exampleDropdownFormEmail2">Date</label>
-                            <input type="date" class="form-control" id="exampleDropdownFormEmail2">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleDropdownFormPassword2">Nombre de personnes</label>
-                            <input type="number" class="form-control" id="exampleDropdownFormPassword2" placeholder="2">
-                        </div>
-                        <button type="submit" class="btn bgdimgrey text-white">Réservez</button>
-                    </div>
-                </div>
-            </div> -->
             </div>
         </nav>
     </header>
@@ -80,11 +63,11 @@
                     <label for="exampleDropdownFormPassword2">Nombre de personnes</label>
                     <input type="number" class="form-control" id="exampleDropdownFormPassword2" placeholder="2">
                 </div>
-                <button id="" type="submit" class="btn bgdimgrey text-white">Réservez</button>
+                <button id="" type="submit" class="btn bgdimgrey text-white" data-toggle="modal" data-target="#modalBook">Réservez</button>
             </div>
         </div>
     </div>
-    <!-- ----------------------------------------------------------- -->
+    <!-- _________________________carousel_____________________________________________ -->
     <div class="container-fluid no-gutter m-0 p-0">
         <section class="col-md-12 d-none d-lg-block d-sm-none d-md-none my-4">
             <div class="container-fluid text-center">
@@ -113,7 +96,7 @@
             </div>
         </section>
     </div>
-    <!-- ----------------------------------------------------- -->
+    <!-- _______________________________ offre____________________________ -->
     <div class="bg-light container-fluid col-md-12 row mx-0 pb-5">
         <div class="col-md-2 d-flex flex-column space-between mt-3">
             <img src="images/anna.jpeg" class="img-fluid img-thumbnail rounded-circle mx-auto" id="photoguide">
@@ -126,7 +109,7 @@
             <a class="btn btn-info float-right text-white" href="guide.html">En savoir +</a>
         </div>
     </div>
-    <!-- ---------------------------------------------- -->
+    <!-- _________________________ offre details _____________________________-->
     <div class="bg-white container-fluid col-md-12 row mt-5 mx-0 p-0">
         <div class="col-md-9 mx-auto">
             <h2>Titre de l'offre</h2>
@@ -176,7 +159,7 @@
                         <label for="exampleDropdownFormPassword2">Nombre de personnes</label>
                         <input type="number" class="form-control" id="exampleDropdownFormPassword2" placeholder="1">
                     </div>
-                    <button type="submit" class="btn bgdimgrey text-white">Réservez</button>
+                    <button type="submit" class="btn bgdimgrey text-white" data-toggle="modal" data-target="#modalBook">Réservez</button>
                 </div>
             </div>
         </div>
@@ -259,6 +242,10 @@
                     <form action="">
                         <textarea name="message" rows="10" cols="45" placeholder="Votre message" class="mx-auto"></textarea>
                     </form>
+                    <form>
+                         <label for="email1">Votre adresse email</label>
+                        <input type="email" class="form-control" id="email1" placeholder="example@gmail.com">
+                    </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-primary">Envoyer</button>
@@ -297,15 +284,74 @@
                 </ul>
             </div>
         </div>
-        <!-- <div class="row d-flex justify-content-center">
-                    <img src="images/fb.svg" class="social pl-3 mt-2 mb-3">
-                    <img src="images/twitter.svg" class="social pl-3 mt-2 mb-3">
-                    <img src="images/insta.svg" class="social pl-3 mt-2 mb-3">
-                    <img src="images/g+.svg" class="social pl-3 mt-2 mb-3">
-                </div>
-                <p class="mb-0 d-flex justify-content-center text-light">Copyright 2018</p> -->
         <p class="mb-0 blockquote-footer text-light d-flex justify-content-end">Copyright 2018</p>
     </footer>
+
+
+<!-- ______________________________modal booking_____________________________________________________ -->
+
+<div class="modal fade" id="modalBook" tabindex="-1" role="dialog" aria-labelledby="ModalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header bgdimgrey text-white">
+        <h3 class="modal-title satisfy" id="payement">Paiement</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="text-white">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <h5>Ce pour quoi vous réservez : titre de l'offre</h5>
+        <p>Récapitulatif</p>
+        <h4>Total : </h4>
+        <hr>
+
+        <h5>Choisisssez votre mode de paiement</h5>
+        <img src="images/mode-of-payment.jpg" class="img-fluid" style="max-width: 30%; height: auto;">
+        <hr>
+        <div class="form-group">
+            <label for="numbercarte">Numéro de la carte</label>
+            <input type="tel" id="numbercarte" placeholder="" class="form-control" required autofocus></input>
+            <div class="row pt-4">
+                <div class="col">
+                <label for="datecarte">Date d'expiration</label>
+                <input type="tel" id="datecarte" placeholder="MM / AA" class="form-control" required ></input>
+            </div>
+            <div class="col">
+                <label for="numbersecu">Code de sécurité</label>
+                <input type="tel" id="numbersecu" placeholder="" class="form-control" required ></input>
+            </div>
+            </div>
+
+    </div>
+
+
+
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+        <button type="button" class="btn bgdimgrey text-white">Validez et payer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- _____________________fin modal __________________________________ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
@@ -313,10 +359,10 @@
     <script>
     $(function() {
 
-    $("#btnBook").on("click", function() {
-    $("#booksmall").toggleClass('d-none');
+        $("#btnBook").on("click", function() {
+            $("#booksmall").toggleClass('d-none');
 
-    });
+        });
 
 
     });
