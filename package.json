@@ -2,7 +2,7 @@
   "name": "guider",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "maingit add ..js",
   "scripts": {
     "start": "live-server --port=3000",
     "jsonserver": "json-server -p 3001 --watch db.json",
