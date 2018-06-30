@@ -1,4 +1,4 @@
-body {
+/* body {
     background-color: #d3c7dc;
     margin-left: 10;
 }
@@ -21,4 +21,94 @@ a:active {
 }
 
 /* for debugging all elements sizes and margins */
-/* *{ border:1px solid red !important} */
+/* *{ border:1px solid red !important} */ */
+
+/* 
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+html #image{
+	background: url(images/main.jpg) no-repeat center fixed;
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+}
+
+.container-fluid {
+	padding: 0;
+}
+
+
+h1, .liennavbar {
+	color: white;
+	font-weight: bold;
+
+}
+h1, h2, h4 {
+	    font-family: 'Satisfy', cursive;
+}
+
+.satisfy {
+	 font-family: 'Satisfy', cursive;
+}
+
+
+#box, #info {
+	background-color: rgba(255, 255, 255, 0.9);
+	/*box-shadow:  10px 10px 10px #555;*/
+}
+
+
+.logos {
+height : 120px;
+}
+#logo {
+		height : 10vw;
+	width: 10vw;
+}
+.logo {
+	height : 6vw;
+	width: 6vw;
+}
+.card-img-top {
+height: 110px;
+width: 110px;
+}
+.coeur {
+	height: 10px;
+}
+
+
+/*FOOTER*/
+
+
+.social {
+	height : 30px;
+}
+
+.partenaires {
+	color: white;
+	border-bottom : white solid 1px;
+}
+
+footer {
+	background-color: rgba(89, 89, 89, 0.9);
+}
+.partners {
+	height : 4vw;
+}
+
+ul {
+	list-style-type: none !important;
+}
+
+li {
+	text-indent: -10px;
+}
+
+
+
+

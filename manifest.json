@@ -1,11 +1,13 @@
+
 {
-  "name": "Veille Techno",
-  "short_name": "VTechno",
-  "theme_color": "#d3c7dc",
-  "background_color": "#d3c7dc",
+  "short_name": "G",
+  "name": "Guider",
+  "theme_color": "#2196f3",
+  "background_color": "#2196f3",
   "display": "standalone",
-  "scope": ".",
-  "start_url": ".",
+  "orientation":"portrait",
+  "Scope": "/",
+  "start_url": "/index.html",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",

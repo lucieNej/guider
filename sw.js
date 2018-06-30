@@ -1,10 +1,11 @@
 const cacheName = 'veille-techno' + '1.3.2';
 
 self.importScripts('idb.js', 'database.js');
-
+// Installation du cache dès la mise en route du service worker 
 self.addEventListener('install', (evt) => {
     console.log(`sw installé à ${new Date().toLocaleTimeString()}`);
     const cachePromise = caches.open(cacheName).then(cache => {
+        // tableau de string qui charche toutes les pages à mettre en cache
         return cache.addAll([
             'index.html',
             'idb.js',
