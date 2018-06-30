@@ -5,7 +5,7 @@ self.importScripts('idb.js', 'database.js');
 self.addEventListener('install', (evt) => {
     console.log(`sw installé à ${new Date().toLocaleTimeString()}`);
     const cachePromise = caches.open(cacheName).then(cache => {
-        // tableau de string qui charche toutes les pages à mettre en cache
+        // tableau de string qui cherche toutes les pages à mettre en cache
         return cache.addAll([
             'index.html',
             'idb.js',

@@ -1,3 +1,12 @@
+
+// $(document).ready(function(){
+//     $("#myBtn").click(function(){
+//         $("#myModal").modal();
+//     });
+// });
+
+
+
 const technosDiv = document.querySelector('#technos');
 
 function loadTechnologies(technos) {
