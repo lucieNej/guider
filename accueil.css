@@ -3,7 +3,7 @@ h1, h2, h3, h4 {
 }
 
 
-#titre {
+.titre {
     margin-top: 20px;
 }
 
@@ -20,9 +20,8 @@ h1, h2, h3, h4 {
 	height: 30px;
 }
 
-#carte {
-/*  position: sticky;*/
- /* height: 100vh;*/
+#parent {
+  height: 80%;
 }
 
 /*FOOTER*/
