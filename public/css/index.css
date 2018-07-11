@@ -1,5 +1,5 @@
 html #image{
-	background: url(images/main.jpg) no-repeat center fixed;
+	background: url(../images/main.jpg) no-repeat center fixed;
 	background-size: cover;
 	margin: 0;
 	padding: 0;
