@@ -7,9 +7,14 @@ h1, h2, h3, h4 {
     margin-top: 20px;
 }
 
+#parent {
+  height: 80%;
+}
 #filtres {
     background-color: #527a7a;
     z-index: 10;
+    
+    
 }
 
 #accordionExample {
@@ -20,10 +25,7 @@ h1, h2, h3, h4 {
 	height: 30px;
 }
 
-#carte {
-/*  position: sticky;*/
- /* height: 100vh;*/
-}
+
 
 /*FOOTER*/
 
