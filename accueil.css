@@ -1,45 +1,48 @@
-h1, h2, h3, h4 {
-    font-family: 'Satisfy', cursive;
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Satisfy', cursive;
 }
-
 
 .titre {
-    margin-top: 20px;
-}
-
-#filtres {
-    background-color: #527a7a;
-    z-index: 1;
-}
-
-#accordionExample {
-    padding: 0px;
-}
-
-#mapimg {
-	height: 30px;
+  margin-top: 20px;
 }
 
 #parent {
   height: 80%;
 }
 
+#filtres {
+  background-color: #527a7a;
+}
+
+#accordionExample {
+  padding: 0px;
+}
+
+#mapimg {
+  height: 30px;
+}
+
 /*FOOTER*/
 
 .social {
-  height : 30px;
+  height: 30px;
 }
 
 .partenaires {
   color: white;
-  border-bottom : white solid 1px;
+  border-bottom: white solid 1px;
 }
 
+/* 
 footer {
   background-color: rgba(89, 89, 89, 0.9);
-}
+} */
+
 .partners {
-  height : 4vw;
+  height: 4vw;
 }
 
 ul {
@@ -49,4 +52,3 @@ ul {
 li {
   text-indent: -10px;
 }
-
