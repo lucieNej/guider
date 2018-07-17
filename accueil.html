@@ -16,15 +16,15 @@
 
 <body class="bg-light">
     <header>
-        <nav class="navbar navbar-expand-xl navbar-expand-lg navbar-expand-md sticky-top navbar-light bg-light nav" role="navigation">
+        <!-- <nav class="navbar navbar-expand-xl navbar-expand-lg navbar-expand-md sticky-top navbar-light bg-light nav" role="navigation">
             <div class="container-fluid">
                 <div class="navbar-header col-xl-1 col-lg-1 col-md-1 d-flex justify-content-between">
                     <a class="navbar-brand mr-0" href="index.html">
                         <img src="images/logo.png" height="100px" width="100px">
                     </a>
-                    <button class="navbar-toggler hidden-lg-up align-self-end" type="button" data-toggle="collapse" data-target="#filtres" aria-controls="navbarToggle"
+                    <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#parent" aria-controls="navbarToggle"
                         aria-expanded="false" aria-label="Toggle navigation" id="btnFiltres">Filtres</button>
-                    <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle"
+                    <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="filtres"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -56,15 +56,38 @@
                     </ul>
                 </div>
             </div>
-        </nav>
+        </nav> -->
+
+        <nav class="navbar navbar-light bg-transparent col-md-12 sticky-top" id="navbar">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" class="d-inline-block" alt="logo" id="logo" style="height : 10vw;
+                    width: 10vw;">
+                </a>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link active font-weight-bold btn-outline-warning" href="#" data-toggle="modal" data-target="#modalSeConnecter">Se connecter</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="liennavbar nav-link font-weight-bold" href="#">EN</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="liennavbar nav-link font-weight-bold" href="#">Link</a>
+                    </li> -->
+                </ul>
+            </nav>
+            <br>
+            <br>
+            <br>
+            <br>
+
     </header>
     <br>
     <br>
   
-    <div class="container-fluid d-flex">
+    <div class="container-fluid d-flex" id="everything">
 
-        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 ml-3 sticky-top d-none d-lg-block d-md-block" id="parent" style="overflow-y: scroll; ">
-            <div id="filtres" class="col-lg-12 col-md-12 pb-3">
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 ml-3 sticky-top " id="parent" style="overflow-y: scroll;">
+            <div id="filtres" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pb-3"  >
                 <h3 class="text-center text-white p-3">Filtres :</h3>
                 <button type="submit" class="btn btn-light btn-block mb-3" id="showMap" onclick="initialiser()">
                     <span class="one">Voir sur la carte
@@ -192,7 +215,7 @@
                             </p>
                         </div>
                         <a href="offres.html">
-                            <img class="card-img-bottom" src="images/grasse.jpeg" alt="Card image cap">
+                            <img class="card-img-bottom pb-3" src="images/grasse.jpeg" alt="Card image cap">
                         </a>
                     </div>
                     <div class="card col-lg-6 col-md-6 col-sm-12">
@@ -204,7 +227,7 @@
                                 <small class="text-muted">25 €</small>
                             </p>
                         </div>
-                        <img class="card-img-bottom" src="images/florian.jpg" alt="florian">
+                        <img class="card-img-bottom pb-3" src="images/florian.jpg" alt="florian">
                     </div>
                 </div>
                 <br>
@@ -218,7 +241,7 @@
                                 <small class="text-muted">25 €</small>
                             </p>
                         </div>
-                        <img class="card-img-bottom" src="images/grasse.jpeg" alt="grasse">
+                        <img class="card-img-bottom pb-3" src="images/grasse.jpeg" alt="grasse">
                     </div>
                     <div class="card col-lg-6 col-md-6 col-sm-12">
                         <div class="card-body">
@@ -229,7 +252,7 @@
                                 <small class="text-muted">25 €</small>
                             </p>
                         </div>
-                        <img class="card-img-bottom" src="images/florian.jpg" alt="florian">
+                        <img class="card-img-bottom pb-3" src="images/florian.jpg" alt="florian">
                     </div>
                 </div>
                 <br><br>
@@ -245,7 +268,7 @@
                             </p>
                         </div>
                         <a href="offres.html">
-                            <img class="card-img-bottom" src="images/grasse.jpeg" alt="Card image cap">
+                            <img class="card-img-bottom pb-3" src="images/grasse.jpeg" alt="Card image cap">
                         </a>
                     </div>
                     <div class="card col-lg-6 col-md-6 col-sm-12">
@@ -257,7 +280,7 @@
                                 <small class="text-muted">25 €</small>
                             </p>
                         </div>
-                        <img class="card-img-bottom" src="images/florian.jpg" alt="florian">
+                        <img class="card-img-bottom pb-3" src="images/florian.jpg" alt="florian">
                     </div>
                 </div>
                 <br>
@@ -274,7 +297,7 @@
                             </p>
                         </div>
                         <a href="offres.html">
-                            <img class="card-img-bottom" src="images/grasse.jpeg" alt="Card image cap">
+                            <img class="card-img-bottom pb-3" src="images/grasse.jpeg" alt="Card image cap">
                         </a>
                     </div>
                     <div class="card col-lg-6 col-md-6 col-sm-12">
@@ -286,7 +309,7 @@
                                 <small class="text-muted">25 €</small>
                             </p>
                         </div>
-                        <img class="card-img-bottom" src="images/florian.jpg" alt="florian">
+                        <img class="card-img-bottom pb-3" src="images/florian.jpg" alt="florian">
                     </div>
                 </div>
                 <br>
@@ -347,12 +370,13 @@
         $(function () {
 
             $("#btnFiltres").on("click", function () {
-                $("#parent").toggleClass().addClass('mt-5');
+                $('#parent').toggle().addClass('collapse navbar-collapse');
+
             });
 
             $('#showMap').on('click', function () {
                 $("#sectionmap").toggle();
-                // $("#googleMap").toggle();
+                
                 $(this).toggleClass('one').find('span').toggle();
                 $("#container").toggle();
             });
