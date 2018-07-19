@@ -12,11 +12,15 @@
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyDDeKgw0rfSMDSS8QjQdKUkpfsi37kP7kE"></script>
+
+    <!-- <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
 </head>
 
 <body class="bg-light">
     <header>
-        <!-- <nav class="navbar navbar-expand-xl navbar-expand-lg navbar-expand-md sticky-top navbar-light bg-light nav" role="navigation">
+        <nav class="navbar navbar-expand-xl navbar-expand-lg navbar-expand-md sticky-top navbar-light bg-light nav" role="navigation">
             <div class="container-fluid">
                 <div class="navbar-header col-xl-1 col-lg-1 col-md-1 d-flex justify-content-between">
                     <a class="navbar-brand mr-0" href="index.html">
@@ -56,30 +60,31 @@
                     </ul>
                 </div>
             </div>
-        </nav> -->
+        </nav>
 
-        <nav class="navbar navbar-light bg-transparent col-md-12 sticky-top" id="navbar">
+        <!-- <nav class="navbar navbar-light bg-transparent col-md-12 sticky-top" id="navbar">
                 <a class="navbar-brand" href="#">
                     <img src="images/logo.png" class="d-inline-block" alt="logo" id="logo" style="height : 10vw;
                     width: 10vw;">
                 </a>
                 <h2 class="d-none d-xl-block satisfy font-weight-bold">"Collect moments not things with Guider"</h2>
                 <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                                <a class="liennavbar nav-link font-weight-bold" href="#">Filtres</a>
+                            </li> 
                     <li class="nav-item">
                         <a class="nav-link active font-weight-bold btn-outline-warning" href="#" data-toggle="modal" data-target="#modalSeConnecter">Se connecter</a>
                     </li>
                     <li class="nav-item ">
                         <a class="liennavbar nav-link font-weight-bold" href="#">EN</a>
                     </li>
-                    <!-- <li class="nav-item">
-                        <a class="liennavbar nav-link font-weight-bold" href="#">Link</a>
-                    </li> -->
-                </ul>
-            </nav>
+                     
+                 </ul>
+            </nav> -->
             <br>
             <br>
             <br>
-            <br>
+            <br> 
 
     </header>
     <br>
@@ -87,8 +92,8 @@
   
     <div class="container-fluid d-flex" id="everything">
 
-        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 ml-3 sticky-top " id="parent" style="overflow-y: scroll;">
-            <div id="filtres" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pb-3"  >
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 ml-3 sticky-top d-none d-lg-block d-md-none d-sm-none" id="parent" style="overflow-y: scroll;">
+            <div id="filtres" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pb-3 "  >
                 <h3 class="text-center text-white p-3">Filtres :</h3>
                 <button type="submit" class="btn btn-light btn-block mb-3" id="showMap" onclick="initialiser()">
                     <span class="one">Voir sur la carte
@@ -183,11 +188,28 @@
                                     </button>
                                 </h5>
                             </div>
-                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <!-- <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                                 <div class="card-body">
                                     faire un range slider :)
                                 </div>
-                            </div>
+                            </div> -->
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <div>
+                                            <div data-role="main" class="ui-content">
+                                                <div data-role="rangeslider" style="width: 90%;">
+                                                    <label for="time-min"></label>
+                                                    <input type="range" name="time-min" id="time-min" value="10" min="0" max="23">
+                                                    <label for="time-max"></label>
+                                                    <input type="range" name="time-max" id="time-max" value="18" min="1" max="24">
+                                                    <p>Entre
+                                                        <span id="duree"></span>h et
+                                                        <span id="dureebis"></span>h</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -207,20 +229,27 @@
                 <div class="card-deck col-lg-12 col-md-12 col-sm-12" id="cards">
                     <div class="card col-lg-6 col-md-6 col-sm-12  ">
                         <div class="card-body">
+                                <a href="guide.html"><img class="card-img-top mx-auto mt-2 rounded-circle img-thumbnail float-right" src="images/IMG-1603.JPG" alt="Card image cap" style="height: 110px;
+                                width: 110px;"></a>
                             <a href="offres.html">
                                 <h5 class="card-title text-dark">Ballade à Grasse</h5>
                             </a>
+                            
                             <p class="card-text">Découverte du village et visite de son célèbre musée Fragonnard</p>
                             <p class="card-text">
                                 <small class="text-muted">25 €</small>
                             </p>
                         </div>
+                        <img class="align-self-end mr-3 mb-3" src="images/like.svg" alt="coeur" style="height: 1vw; width: 1vw;">
                         <a href="offres.html">
-                            <img class="card-img-bottom pb-3" src="images/grasse.jpeg" alt="Card image cap">
+                            <img class="card-img-bottom pb-3" src="images/grasse.jpeg" alt="Grasse">
                         </a>
+                        
                     </div>
                     <div class="card col-lg-6 col-md-6 col-sm-12">
                         <div class="card-body">
+                                <a href="guide.html"><img class="card-img-top mx-auto mt-2 rounded-circle img-thumbnail float-right" src="images/IMG-1603.JPG" alt="Card image cap" style="height: 110px;
+                                width: 110px;"></a>
                             <h5 class="card-title">Gorges du Loup</h5>
                             <p class="card-text">Découverte de Gorges du Loup et visite des ateliers de fabrication artisanale de produits de
                                 confiserie et chocolat. </p>
@@ -228,6 +257,7 @@
                                 <small class="text-muted">25 €</small>
                             </p>
                         </div>
+                        <img class="align-self-end mr-3 mb-3" src="images/like.svg" alt="coeur" style="height: 1vw; width: 1vw;">
                         <img class="card-img-bottom pb-3" src="images/florian.jpg" alt="florian">
                     </div>
                 </div>
@@ -236,16 +266,22 @@
                 <div class="card-deck col-lg-12 col-md-12 col-sm-12">
                     <div class="card col-lg-6 col-md-6 col-sm-12">
                         <div class="card-body">
+                                <a href="guide.html"><img class="card-img-top mx-auto mt-2 rounded-circle img-thumbnail float-right" src="images/IMG-1603.JPG" alt="Card image cap" style="height: 110px;
+                                width: 110px;"></a>
                             <h5 class="card-title">Ballade à Grasse</h5>
                             <p class="card-text">Découverte du village et visite de son célèbre musée Fragonnard</p>
                             <p class="card-text">
                                 <small class="text-muted">25 €</small>
                             </p>
                         </div>
+                        <img class="align-self-end mr-3 mb-3" src="images/like.svg" alt="coeur" style="height: 1vw; width: 1vw;">
                         <img class="card-img-bottom pb-3" src="images/grasse.jpeg" alt="grasse">
                     </div>
                     <div class="card col-lg-6 col-md-6 col-sm-12">
                         <div class="card-body">
+                               
+                            <a href="guide.html"><img class="card-img-top mx-auto mt-2 rounded-circle img-thumbnail float-right" src="images/IMG-1603.JPG" alt="Card image cap" style="height: 110px;
+                            width: 110px;"></a>
                             <h5 class="card-title">Gorges du Loup</h5>
                             <p class="card-text">Découverte de Gorges du Loup et visite des ateliers de fabrication artisanale de produits de
                                 confiserie et chocolat. </p>
@@ -253,6 +289,7 @@
                                 <small class="text-muted">25 €</small>
                             </p>
                         </div>
+                        <img class="align-self-end mr-3 mb-3" src="images/like.svg" alt="coeur" style="height: 1vw; width: 1vw;">
                         <img class="card-img-bottom pb-3" src="images/florian.jpg" alt="florian">
                     </div>
                 </div>
@@ -260,6 +297,9 @@
                 <div class="card-deck col-lg-12 col-md-12 col-sm-12 cards">
                     <div class="card col-lg-6 col-md-6 col-sm-12  ">
                         <div class="card-body">
+                              
+                                <a href="guide.html"><img class="card-img-top mx-auto mt-2 rounded-circle img-thumbnail float-right" src="images/IMG-1603.JPG" alt="Card image cap" style="height: 110px;
+                                    width: 110px;"></a>
                             <a href="offres.html">
                                 <h5 class="card-title text-dark">Ballade à Grasse</h5>
                             </a>
@@ -268,12 +308,16 @@
                                 <small class="text-muted">25 €</small>
                             </p>
                         </div>
+                        <img class="align-self-end mr-3 mb-3" src="images/like.svg" alt="coeur" style="height: 1vw; width: 1vw;">
                         <a href="offres.html">
                             <img class="card-img-bottom pb-3" src="images/grasse.jpeg" alt="Card image cap">
                         </a>
                     </div>
                     <div class="card col-lg-6 col-md-6 col-sm-12">
                         <div class="card-body">
+                               
+                                <a href="guide.html"><img class="card-img-top mx-auto mt-2 rounded-circle img-thumbnail float-right" src="images/IMG-1603.JPG" alt="Card image cap" style="height: 110px;
+                                width: 110px;"></a>
                             <h5 class="card-title">Gorges du Loup</h5>
                             <p class="card-text">Découverte de Gorges du Loup et visite des ateliers de fabrication artisanale de produits de
                                 confiserie et chocolat. </p>
@@ -281,6 +325,7 @@
                                 <small class="text-muted">25 €</small>
                             </p>
                         </div>
+                        <img class="align-self-end mr-3 mb-3" src="images/like.svg" alt="coeur" style="height: 1vw; width: 1vw;">
                         <img class="card-img-bottom pb-3" src="images/florian.jpg" alt="florian">
                     </div>
                 </div>
@@ -289,6 +334,9 @@
                 <div class="card-deck col-lg-12 col-md-12 col-sm-12 cards">
                     <div class="card col-lg-6 col-md-6 col-sm-12  ">
                         <div class="card-body">
+                               
+                                <a href="guide.html"><img class="card-img-top mx-auto mt-2 rounded-circle img-thumbnail float-right" src="images/IMG-1603.JPG" alt="Card image cap" style="height: 110px;
+                                width: 110px;"></a>
                             <a href="offres.html">
                                 <h5 class="card-title text-dark">Ballade à Grasse</h5>
                             </a>
@@ -297,12 +345,16 @@
                                 <small class="text-muted">25 €</small>
                             </p>
                         </div>
+                        <img class="align-self-end mr-3 mb-3" src="images/like.svg" alt="coeur" style="height: 1vw; width: 1vw;">
                         <a href="offres.html">
                             <img class="card-img-bottom pb-3" src="images/grasse.jpeg" alt="Card image cap">
                         </a>
                     </div>
                     <div class="card col-lg-6 col-md-6 col-sm-12">
                         <div class="card-body">
+                            
+                                <a href="guide.html"><img class="card-img-top mx-auto mt-2 rounded-circle img-thumbnail float-right" src="images/IMG-1603.JPG" alt="Card image cap" style="height: 110px;
+                                    width: 110px;"></a>
                             <h5 class="card-title">Gorges du Loup</h5>
                             <p class="card-text">Découverte de Gorges du Loup et visite des ateliers de fabrication artisanale de produits de
                                 confiserie et chocolat. </p>
@@ -310,6 +362,7 @@
                                 <small class="text-muted">25 €</small>
                             </p>
                         </div>
+                        <img class="align-self-end mr-3 mb-3" src="images/like.svg" alt="coeur" style="height: 1vw; width: 1vw;">
                         <img class="card-img-bottom pb-3" src="images/florian.jpg" alt="florian">
                     </div>
                 </div>
@@ -371,7 +424,7 @@
         $(function () {
 
             $("#btnFiltres").on("click", function () {
-                $('#parent').toggle().addClass('collapse navbar-collapse');
+                $('parent').removeClass('d-sm-none').addClass('d-sm-block');
 
             });
 
@@ -381,6 +434,20 @@
                 $(this).toggleClass('one').find('span').toggle();
                 $("#container").toggle();
             });
+
+             var slider = document.getElementById("time-min");
+            var output = document.getElementById("duree");
+            output.innerHTML = slider.value;
+            slider.oninput = function () {
+                output.innerHTML = this.value;
+            }
+
+            var sliderbis = document.getElementById("time-max");
+            var outputbis = document.getElementById("dureebis");
+            outputbis.innerHTML = sliderbis.value;
+            sliderbis.oninput = function () {
+                outputbis.innerHTML = this.value;
+            }
 
         });
     </script>
