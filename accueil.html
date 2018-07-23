@@ -1,0 +1,536 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+  <title>Guider </title>
+  <link rel="stylesheet" href="accueil.css">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyDDeKgw0rfSMDSS8QjQdKUkpfsi37kP7kE"></script>
+
+
+
+
+</head>
+
+<body class="bg-light">
+  <header>
+    <nav class="navbar navbar-expand-xl navbar-expand-lg navbar-expand-md sticky-top navbar-light bg-light nav" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header col-xl-1 col-lg-1 col-md-1 d-flex justify-content-between">
+          <a class="navbar-brand mr-0" href="index.html">
+            <img src="images/logo.png" height="100px" width="100px">
+          </a>
+          <button class="navbar-toggler hidden-lg-up align-self-end" type="button" data-toggle="collapse" data-target="#filtres" aria-controls="navbarToggle"
+            aria-expanded="false" aria-label="Toggle navigation" id="btnFiltres">Filtres</button>
+          <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse col-xl-5 col-lg-5 col-md-1 col-sm-1">
+          <h2 id="titre" class="d-none d-xl-block">"Collect moments not things with Guider"</h2>
+        </div>
+        <div class="collapse navbar-collapse col-xl-6 col-lg-6 col-md-8 col-sm-7 justify-content-end" id="navbarToggle">
+          <ul class="navbar-nav ">
+            <li class="nav-item nav-link ">
+              <a class="text-dark btn m-0" href="liens_du_menu/favoris.html">Mes favoris</a>
+            </li>
+            <li class="nav-item nav-link ">
+              <a class="text-dark btn m-0" href="liens_du_menu/reservations.html">Mes reservations</a>
+            </li>
+            <li class="nav-item nav-link ">
+              <a class="text-dark btn m-0" href="liens_du_menu/messagerie.html">Mes messages</a>
+            </li>
+            <li class="nav-item btn dropdown mr-3">
+              <a class="nav-link dropdown-toggle m-O" href="#exp" id="navbardrop" data-toggle="dropdown">
+                <img src="images/69442.svg" id="userimg"></img>
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="liens_du_menu/profil.html">Mon profil</a>
+                <a class="dropdown-item" href="liens_du_menu/profilguide.html">Devenir guide</a>
+                <a class="dropdown-item" href="index.html">Se déconnecter</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container-fluid">
+    <!--SMALL-->
+
+    <div class="col-sm-12 col-xs-12 d-none d-sm-block d-md-none d-lg-none d-xl-none mx-auto border sticky-top" id="small" style="overflow-y: scroll;">
+      <div id="filtresSmall" class="col-sm-12 col-md-12 pb-3">
+        <h3 class="text-center text-white p-3">Filtres :</h3>
+        <button type="submit" class="btn btn-light btn-block mb-3" id="showMapSmall" onclick="initialiser()">
+          <span class="one">Voir sur la carte
+            <img src="images/map.svg" class="img-fluid" id="mapimgSmall">
+          </span>
+          <span style="display: none;" class="one">Retour</span>
+        </button>
+        <div class="form-group">
+          <label for="destinationSmall" class="text-white">Destination</label>
+          <input type="email" class="form-control form-control-sm" id="destinationSmall" placeholder="">
+        </div>
+        <div class="form-group">
+          <label for="form-control" class="text-white">Distance</label>
+          <select class="form-control form-control-sm">
+            <option selected>Choisir</option>
+            <option>20 km</option>
+            <option>40 km</option>
+            <option>60 km</option>
+          </select>
+        </div>
+        <label for="" class="text-white">Date :</label>
+        <input type="date" name="day" max="3000-12-31" min="1000-01-01" class="form-control form-control-sm">
+        <br>
+        <div class="accordion" id="accordionSmall">
+          <div class="card">
+            <div class="card-header" id="headingOneSmall">
+              <h3 class="mb-0">
+                <button class="btn btn-light collapsed" data-toggle="collapse" data-target="#collapseOneSmall" aria-expanded="false" aria-controls="collapseOne"
+                  role="button">
+                  Catégories
+                </button>
+              </h3>
+            </div>
+            <div id="collapseOneSmall" class="collapse" aria-labelledby="headingOneSmall" data-parent="#accordionSmall">
+              <div class="card-body">
+
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1Small">
+                  <label class="form-check-label" for="defaultCheck1Small">
+                    Nature
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck2Small">
+                  <label class="form-check-label" for="defaultCheck2Small">
+                    Gastronomie
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck3Small">
+                  <label class="form-check-label" for="defaultCheck3Small">
+                    Cutlture locale
+                  </label>
+                </div>
+                <div class="form-check ">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck4Small">
+                  <label class="form-check-label" for="defaultCheck4Small">
+                    Tourisme atypique
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwoSmall">
+                <h3 class="mb-0">
+                  <button class="btn btn-light collapsed" data-toggle="collapse" data-target="#collapseTwoSmall" aria-expanded="false" aria-controls="collapseTwo">
+                    Langues
+                  </button>
+                </h3>
+              </div>
+              <div id="collapseTwoSmall" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExampleSmall">
+                <div class="card-body">
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck5Small">
+                    <label class="form-check-label" for="defaultCheck5Small">
+                      Français
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck6Small">
+                    <label class="form-check-label" for="defaultCheck6Small">
+                      Anglais
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThreeSmall">
+                <h3 class="mb-0">
+                  <button class="btn btn-light collapsed" data-toggle="collapse" data-target="#collapseThreeSmall" aria-expanded="false" aria-controls="collapseThree">
+                    Durée
+                  </button>
+                </h3>
+              </div>
+
+
+              <!-- range slider -->
+              <div id="collapseThreeSmall" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExampleSmall">
+                <div class="card-body">
+                  <div>
+                    <div data-role="main" class="ui-content">
+                      <div data-role="rangeslider" style="width: 90%;">
+                        <label for="time-minSmall"></label>
+                        <input type="range" name="time-min" id="time-minSmall" value="10" min="0" max="23">
+                        <label for="time-maxSmall"></label>
+                        <input type="range" name="time-max" id="time-maxSmall" value="18" min="1" max="24">
+                        <p>Entre
+                          <span id="dureeSmall"></span>h et
+                          <span id="dureebisSmall"></span>h</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- fin range slider -->
+
+
+
+            </div>
+          </div>
+        </div>
+        <br>
+        <button type="submit" class="btn btn-dark btn-block">Actualiser</button>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!--BIG-->
+
+  <div class="container-fluid d-flex">
+    <!-- conteiner of filterss and offers-->
+
+    <div class="col-lg-3 col-md-4  ml-3 sticky-top d-none d-lg-block d-md-block" id="big" style="overflow-y: scroll; height: 84%;">
+      <div id="filtresBig" class="col-lg-12 col-md-12 pb-3">
+        <h3 class="text-center text-white p-3">Filtres :</h3>
+        <button type="submit" class="btn btn-light btn-block mb-3" id="showMapBig" onclick="initialiser()">
+          <span class="one">Voir sur la carte
+            <img src="images/map.svg" class="img-fluid" id="mapimgBig">
+          </span>
+          <span style="display: none;" class="one">Retour</span>
+        </button>
+        <div class="form-group">
+          <label for="destinationBig" class="text-white">Destination</label>
+          <input type="email" class="form-control form-control-sm" id="destinationBig" placeholder="">
+        </div>
+        <div class="form-group">
+          <label for="form-control" class="text-white">Distance</label>
+          <select class="form-control form-control-sm">
+            <option selected>Choisir</option>
+            <option>20 km</option>
+            <option>40 km</option>
+            <option>60 km</option>
+          </select>
+        </div>
+        <label for="" class="text-white">Date :</label>
+        <input type="date" name="day" max="3000-12-31" min="1000-01-01" class="form-control form-control-sm">
+        <br>
+        <div class="accordion" id="accordionBig">
+          <div class="card">
+            <div class="card-header" id="headingOneBig">
+              <h3 class="mb-0">
+                <button class="btn btn-light collapsed" data-toggle="collapse" data-target="#collapseOneBig" aria-expanded="false" aria-controls="collapseOne"
+                  role="button">
+                  Catégories
+                </button>
+              </h3>
+            </div>
+            <div id="collapseOneBig" class="collapse" aria-labelledby="headingOne" data-parent="#accordionBig">
+              <div class="card-body">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1Big">
+                  <label class="form-check-label" for="defaultCheck1Big">
+                    Nature
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck2Big">
+                  <label class="form-check-label" for="defaultCheck2Big">
+                    Gastronomie
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck3Big">
+                  <label class="form-check-label" for="defaultCheck3Big">
+                    Culture locale
+                  </label>
+                </div>
+                <div class="form-check ">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck4Big">
+                  <label class="form-check-label" for="defaultCheck4Big">
+                    Tourisme atypique
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwoBig">
+                <h3 class="mb-0">
+                  <button class="btn btn-light collapsed" data-toggle="collapse" data-target="#collapseTwoBig" aria-expanded="false" aria-controls="collapseTwo">
+                    Langues
+                  </button>
+                </h3>
+              </div>
+              <div id="collapseTwoBig" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionBig">
+                <div class="card-body">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck5Big">
+                    <label class="form-check-label" for="defaultCheck5Big">
+                      Français
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck6Big">
+                    <label class="form-check-label" for="defaultCheck6Big">
+                      Anglais
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThreeBig">
+                <h3 class="mb-0">
+                  <button class="btn btn-light collapsed" data-toggle="collapse" data-target="#collapseThreeBig" aria-expanded="false" aria-controls="collapseThreeBig">
+                    Durée
+                  </button>
+                </h3>
+              </div>
+
+
+              <!-- range slider filtres big -->
+              <div id="collapseThreeBig" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExampleBig">
+                <div class="card-body">
+                  <div>
+                    <div data-role="main" class="ui-content">
+                      <div data-role="rangeslider">
+                        <label for="time-minBig"></label>
+                        <input type="range" name="time-minBig" id="time-minBig" value="10" min="0" max="23">
+                        <label for="time-maxBig"></label>
+                        <input type="range" name="time-maxBig" id="time-maxBig" value="18" min="1" max="24">
+                        <p>Entre
+                          <span id="dureeBig"></span>h et
+                          <span id="dureebisBig"></span>h</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- fin range slider -->
+
+            </div>
+          </div>
+        </div>
+        <br>
+        <button type="submit" class="btn btn-dark btn-block">Actualiser</button>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="col-lg-9 col-md-8 col-sm-12 col-xs-12 ">
+      <h3 id="titre" class="d-block d-sm-block d-lg-block d-md-block d-xl-none text-center">"Collect moments not things with Guider"</h3>
+
+      <!--MAP-->
+      <section class="sticky-top" style="display:none !important; " id="sectionmap">
+        <div id="carte" style="width:100%; height:75%">
+        </div>
+      </section>
+
+      <div id="container">
+        <div class="card-deck col-lg-12 col-md-12 col-sm-12" id="cards">
+          <div class="card col-lg-6 col-md-6 col-sm-12  ">
+            <div class="card-body">
+              <a href="guide.html">
+                <img class="card-img-top my-2 rounded-circle img-thumbnail img-fluid d-none d-sm-none d-md-block d-lg-block float-right"
+                  src="images/IMG-1603.JPG" alt="photo guide" style="height: 110px;
+                                width: 110px;">
+              </a>
+              <a href="offres.html">
+                <h3 class="card-title text-dark">Ballade à Grasse</h3>
+              </a>
+              <p class="card-text">Découverte du village et visite de son célèbre musée Fragonnard</p>
+
+            </div>
+            <p class="card-text">
+              <small class="text-muted">25 €</small>
+              <img class="float-right mr-3 mb-3" src="images/like.svg" alt="coeur" style="height: 15px; width: 15px;">
+            </p>
+
+            <a href="offres.html">
+              <img class="card-img-bottom pb-3 " src="images/grasse.jpeg" alt="Card image cap">
+            </a>
+          </div>
+          <div class="card col-lg-6 col-md-6 col-sm-12">
+            <div class="card-body">
+              <a href="guide.html">
+                <img class="card-img-top mx-auto my-2 rounded-circle img-thumbnail img-fluid d-none d-sm-none d-md-block d-lg-block float-right"
+                  src="images/IMG-1603.JPG" alt="photo guide" style="height: 110px;
+                                width: 110px;">
+              </a>
+              <h3 class="card-title">Gorges du Loup</h3>
+              <p class="card-text">Découverte de Gorges du Loup et visite des ateliers de fabrication artisanale de produits de confiserie et
+                chocolat. </p>
+
+            </div>
+            <p class="card-text">
+              <small class="text-muted">25 €</small>
+              <img class="float-right mr-3 mb-3" src="images/like.svg" alt="coeur" style="height: 15px; width: 15px;">
+            </p>
+            <img class="card-img-bottom pb-3" src="images/florian.jpg" alt="florian">
+          </div>
+        </div>
+        <br>
+        <br>
+        <div class="card-deck col-lg-12 col-md-12 col-sm-12">
+          <div class="card col-lg-6 col-md-6 col-sm-12">
+            <div class="card-body">
+              <a href="guide.html">
+                <img class="card-img-top mx-auto my-2 rounded-circle img-thumbnail img-fluid d-none d-sm-none d-md-block d-lg-block float-right"
+                  src="images/IMG-1603.JPG" alt="photo guide" style="height: 110px;
+                                width: 110px;">
+              </a>
+              <h3 class="card-title">Ballade à Grasse</h3>
+              <p class="card-text">Découverte du village et visite de son célèbre musée Fragonnard</p>
+
+            </div>
+            <p class="card-text">
+              <small class="text-muted">25 €</small>
+              <img class="float-right mr-3 mb-3" src="images/like.svg" alt="coeur" style="height: 15px; width: 15px;">
+            </p>
+            <img class="card-img-bottom pb-3" src="images/grasse.jpeg" alt="grasse">
+          </div>
+          <div class="card col-lg-6 col-md-6 col-sm-12">
+            <div class="card-body">
+              <a href="guide.html">
+                <img class="card-img-top mx-auto my-2 rounded-circle img-thumbnail img-fluid d-none d-sm-none d-md-block d-lg-block float-right"
+                  src="images/IMG-1603.JPG" alt="photo guide" style="height: 110px;
+                                width: 110px;">
+              </a>
+              <h3 class="card-title">Gorges-du-Loup</h3>
+              <p class="card-text">Découverte de Gorges du Loup et visite des ateliers de fabrication artisanale de produits de confiserie et
+                chocolat. </p>
+
+            </div>
+            <p class="card-text">
+              <small class="text-muted">25 €</small>
+              <img class="float-right mr-3 mb-3" src="images/like.svg" alt="coeur" style="height: 15px; width: 15px;">
+            </p>
+            <img class="card-img-bottom pb-3" src="images/florian.jpg" alt="florian">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- __________________FOOTER____________________________________________ -->
+  <br>
+  <br>
+
+  <div class="container-fluid p-0 bg-dark">
+    <footer class="col-md-12 mb-0 mt-5 p-3">
+      <div class="row p-3 text-light">
+        <div class="col-md-4">
+          <h3 class="pb-2">Nos Partenaires</h3>
+          <ul>
+            <li>Sictiam</li>
+            <li>Gîtes de France</li>
+            <li>Département des Alpes-Maritimes</li>
+            <li>France Connect</li>
+            <li>Nos partenaires etc</li>
+          </ul>
+        </div>
+        <div class="col-md-4 d-flex align-items-center justify-content-center">
+          <img src="images/fb.svg" class="social px-3 mt-2 mb-3">
+          <img src="images/twitter.svg" class="social px-3 mt-2 mb-3">
+          <img src="images/insta.svg" class="social px-3 mt-2 mb-3">
+          <img src="images/g+.svg" class="social px-3 mt-2 mb-3">
+        </div>
+        <div class="col-md-4">
+          <h3 class="pb-2">Liens</h3>
+          <ul>
+            <li>Conditions Générales</li>
+            <li>Carte</li>
+            <li>Recherche</li>
+            <li>Equipe Guider</li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+      <p class="mb-0 blockquote-footer text-light d-flex justify-content-end">Copyright 2018</p>
+    </footer>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+
+
+  <script>
+    $(function () {
+
+      $("#btnFiltres").on("click", function () {
+        $("#small").toggleClass('d-none').addClass('mt-5');
+      });
+
+
+      $('#showMapSmall').on('click', function () {
+        $("#sectionmap").toggle();
+        $(this).toggleClass('one').find('span').toggle();
+        $("#container").toggle();
+      });
+
+      $('#showMapBig').on('click', function () {
+        $("#sectionmap").toggle();
+        $(this).toggleClass('one').find('span').toggle();
+        $("#container").toggle();
+      });
+
+      //pour le range slider filtres small
+      var slider = document.getElementById("time-minSmall");
+      var output = document.getElementById("dureeSmall");
+      output.innerHTML = slider.value;
+      slider.oninput = function () {
+        output.innerHTML = this.value;
+      }
+
+      var sliderbis = document.getElementById("time-maxSmall");
+      var outputbis = document.getElementById("dureebisSmall");
+      outputbis.innerHTML = sliderbis.value;
+      sliderbis.oninput = function () {
+        outputbis.innerHTML = this.value;
+      }
+
+      //pour le range slider du filtres big
+      var sliderBig = document.getElementById("time-minBig");
+      var outputBig = document.getElementById("dureeBig");
+      outputBig.innerHTML = sliderBig.value;
+      sliderBig.oninput = function () {
+        outputBig.innerHTML = this.value;
+      }
+
+      var sliderbisBig = document.getElementById("time-maxBig");
+      var outputbisBig = document.getElementById("dureebisBig");
+      outputbisBig.innerHTML = sliderbisBig.value;
+      sliderbisBig.oninput = function () {
+        outputbisBig.innerHTML = this.value;
+      }
+
+
+    });
+  </script>
+
+  <script src="map.js"></script>
+
+</body>
+
+</html>
