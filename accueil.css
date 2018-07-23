@@ -1,9 +1,12 @@
 h1,
 h2,
 h3,
-h4 {
+h4
+{
   font-family: 'Satisfy', cursive;
 }
+
+
 
 #titre {
   margin-top: 20px;
@@ -28,6 +31,7 @@ h4 {
 #mapimgSmall {
   height: 30px;
 }
+
 
 /*FOOTER*/
 
